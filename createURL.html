@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Create a url </title>
+</head>
+
+<body>
+<h1>Add and view urls </h1>
+<form action="." method="POST">{% csrf_token %}
+inputURL: <input type="text" name="inputURL"/><br/>
+<br/>
+<input type="submit" value="ADD"/>
+</form>
+
+<form action="http://127.0.0.1:8080/polls/res/" method="GET">{% csrf_token %}
+<input type="submit" value="SHOW"/>
+</form>
+</body>
+
+</html>
